@@ -1,0 +1,29 @@
+{
+  "name": "cyfer-blockchain",
+  "version": "1.0.0",
+  "description": "this is cyfer-blockchain landing page",
+  "keywords": [
+    "saas",
+    "bootstrap",
+    "css",
+    "html"
+  ],
+  "homepage": "https://github.com/khus759/Cyfer-Blockchain#readme",
+  "bugs": {
+    "url": "https://github.com/khus759/Cyfer-Blockchain/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khus759/Cyfer-Blockchain.git"
+  },
+  "license": "ISC",
+  "author": "khushi",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.6"
+  }
+}

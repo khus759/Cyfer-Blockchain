@@ -1,0 +1,23 @@
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .discovery {
+    padding-top: 6rem; // reduced from pt-lg-100
+    padding-bottom: 8rem; // reduced from pb-lg-200
+
+
+
+    h2.heading-gradient {
+      font-size: 3rem; // reduced slightly for tighter layouts
+      padding-bottom: 5rem !important; // adjust pb-lg-60/pb-lg-100
+    }
+
+    p.fs-8 {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+
+    .mt-6 {
+      margin-top: 3rem !important;
+    }
+  }
+}

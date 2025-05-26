@@ -1,0 +1,177 @@
+// Theme colors
+$accent: #B794FC;
+$primary: #B95DFE;
+$secondary: #6F26FF;
+$lavender: #DAC8FF;
+$light-purple: #E6C6FF;
+$medium-Purple: #8649F2;
+$dark-Purple: #7B38FF;
+$dark-blue :#11111B;
+$green: #8FE600;
+$blur-blue :#1B1B2A;
+
+$custom_theme_colors: (
+  "accent": $accent,
+  "lavender": $lavender,
+  "light-purple": $light-purple,
+  "medium-Purple": $medium-Purple,
+  "dark-Purple": $dark-Purple,
+  "dark-blue": $dark-blue,
+  "green": $green,
+  "blur-blue": $blur-blue, 
+);
+
+// Font families
+$font-family-base: "Archivo", sans-serif;
+$headings-font-family: "Clash Display Variable",sans-serif;
+
+
+// $body-color: $bg-color;
+
+// Custom container max-widths and grid-breakpoints  
+$custom-grid-breakpoints: (
+ xxxl: 1700px
+);
+$custom-container-max-widths: (
+  xxxl: 1460px
+);
+
+// Font Sizes
+$font-size-base: 1rem; // 16px
+
+$h1-font-size: min(4.25rem, calc(#{$font-size-base} + 3.5vw)); // max ~68px
+$h2-font-size: $font-size-base * 3.75;  // 60px
+$h3-font-size: $font-size-base * 2.25;  // 36px
+$h4-font-size: $font-size-base * 2;     // 32px
+$h5-font-size: $font-size-base * 1.875; // 30px
+$h6-font-size: $font-size-base * 1.75;  // 28px
+$h7-font-size: $font-size-base * 1.5;   // 24px
+$h8-font-size: $font-size-base * 1.25;  // 20px
+$h9-font-size: $font-size-base * 0.875; // 14px
+
+$custom-font-size: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+  7: $h7-font-size,
+  8: $h8-font-size,
+  9: $h9-font-size,
+);
+
+
+// Position values
+$position-values: (
+  0: 0,
+  2: 2%,
+  5: 5%,
+  10: 10%,
+  14: 14%,
+  6: 6%,
+  50: 50%,
+  51: 51%,
+  70: 70%,
+  100: 100%,
+);
+
+$zindex-levels: (
+  n1: -1,
+  0: 0,
+  1: 1,
+  2: 2,
+  3: 3
+);
+$custom-zindex-levels: (
+  n1: -1,
+  n2: -3,
+  0: 0,
+  1: 1,
+  2: 2,
+  3: 3,
+  4: 4,
+);
+// Spacer
+
+$spacer: 1rem; // Base: 1rem = 16px
+$spacers: (
+  0: 0,                 // 0rem
+  1: $spacer * 0.3125,  // 5px
+  2: $spacer * 0.625,   // 10px
+  3: $spacer * 0.9375,  // 15px
+  4: $spacer * 1.25,    // 20px
+  5: $spacer * 1.5625,  // 25px
+  6: $spacer * 1.875,   // 30px
+  7: $spacer * 2.1875,  // 35px
+  8: $spacer * 2.5,     // 40px
+  50: $spacer * 3.125,  // 50px
+  52: $spacer * 3.25,   // 52px
+  55: $spacer * 3.438,   // 55px
+  60: $spacer * 3.75,   // 60px
+  66: $spacer * 4.125,  // 66px
+  70: $spacer * 4.375,  // 70px
+  80: $spacer * 5,      // 80px
+  90: $spacer * 5.625,  // 90px
+  100: $spacer * 6.25,  // 100px
+  150: $spacer * 9.375, // 150px
+  170: $spacer * 10.625, // 170px
+  185: $spacer * 11, 
+  200: $spacer * 12.5,  // 200px
+  
+);
+
+//import Bootstrap Variables 
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+//Merge Custom maps
+$container-max-widths: map-merge($container-max-widths, $custom-container-max-widths);
+$grid-breakpoints: map-merge($grid-breakpoints, $custom-grid-breakpoints);
+$theme-colors: map-merge($map1: $theme-colors, $map2: $custom_theme_colors);
+$font-sizes: map-merge($font-sizes, $custom-font-size);
+$zindex-levels :map-merge($map1: $zindex-levels, $map2: $custom-zindex-levels);
+
+//Import full Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Import sections
+
+@import './sections/navbar';
+@import './sections/intro_section';
+@import './sections/stats_section';
+@import './sections/Discover_Crypto';
+@import './sections/our_products';
+@import './sections/our_services';
+@import './sections/our_Credentials';
+@import './sections/Testimonials';
+@import './sections/our_Resources';
+@import './sections/form_section';
+@import './sections/footer';
+
+
+// Import components
+@import './components/animination';
+@import './components/button';
+@import './components/mixins';
+@import './components/typography';
+
+// .stats-spider::after {
+//   content: '';
+//   position: absolute;
+//   top: 44rem;
+//   right: 0;
+//   min-height: 80vh;
+//   width: 50%; 
+//   background-image: url('../../images/spider-crypto.svg');
+//   background-repeat: no-repeat;
+//   background-position: right;
+//   background-size: contain; /* or 'cover' or 'auto' based on image */
+//   z-index: -76;
+//   pointer-events: none;
+// }
+
+// .overflow-x-clip {
+//   overflow-x: clip;
+// }

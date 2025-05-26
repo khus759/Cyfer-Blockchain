@@ -1,0 +1,20 @@
+@import './mixins'; 
+
+.heading-gradient {
+  @include gradient-text(linear-gradient(94.47deg, #FFFFFF 6.12%, $lavender 80.25%));
+}
+
+.text-gradient {
+  @include gradient-text(linear-gradient(97deg, #FFFFFF -31.45%, #B794FC 91.35%));
+}
+
+.section-gradient {
+  @include gradient-text(linear-gradient(91.59deg, #B95DFE -9.67%, #E6C6FF 108.8%));
+  // border: 2px solid;
+  // border-image-source: linear-gradient(91.59deg, #B95DFE -9.67%, #E6C6FF 108.8%);
+  // border-image-slice: 1;
+  // padding: 0.5rem 1rem;
+  // border-radius: 50px;
+  // display: inline-block; 
+
+}

@@ -1,0 +1,61 @@
+.product::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-5%, 30%);
+  width: 20%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background: $primary;
+  filter: blur(250px);
+  z-index: -1;
+}
+
+.sakura-card{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 70px;
+    height: 80px;
+}
+
+.Komorebi-card{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 70px;
+    height: 80px;
+}
+
+
+.yugen-card{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 70px;
+    height: 80px;
+}
+
+.product-sakura-content{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+
+.product-komorebi-content{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+
+.product-yugen-content{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+
+.logo-w {
+    width: 65px;
+    
+}

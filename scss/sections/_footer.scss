@@ -1,0 +1,44 @@
+footer .container {
+    background-image: url(../../images/footer-mask.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 65px 32px 91px 96px;
+}
+
+.footer-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0%, -2%);
+  width: 20%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background: $primary;
+  filter: blur(300px);
+  z-index: -1;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .footer-heading {
+        font-size: 0.95rem !important; 
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .footer-heading {
+        font-size: 1rem !important; 
+    }
+}
+
+@media (max-width: 991.98px) {
+    .footer-heading {
+        font-size: 1rem ;
+        text-align: center;
+    }
+
+    .footer-section ul li {
+        text-align: center;
+    }
+}
