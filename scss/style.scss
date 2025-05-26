@@ -152,26 +152,8 @@ $zindex-levels :map-merge($map1: $zindex-levels, $map2: $custom-zindex-levels);
 
 
 // Import components
-@import './components/animination';
+
 @import './components/button';
 @import './components/mixins';
 @import './components/typography';
 
-// .stats-spider::after {
-//   content: '';
-//   position: absolute;
-//   top: 44rem;
-//   right: 0;
-//   min-height: 80vh;
-//   width: 50%; 
-//   background-image: url('../../images/spider-crypto.svg');
-//   background-repeat: no-repeat;
-//   background-position: right;
-//   background-size: contain; /* or 'cover' or 'auto' based on image */
-//   z-index: -76;
-//   pointer-events: none;
-// }
-
-// .overflow-x-clip {
-//   overflow-x: clip;
-// }
